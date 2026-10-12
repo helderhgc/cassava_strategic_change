@@ -1,0 +1,232 @@
+\section{Appendix: Cross-matrix}
+\label{apx:appendix_cmrealized}
+
+\ins{The selection rule, the minimum sets, and the sensitivity analysis reported in \autoref{subsection:aplica_electre} can be reproduced from \autoref{tab:laca_table} with the script \texttt{stage2\_selection.py} provided in the online appendix.}
+
+
+
+\begin{table}[h!]
+    \caption{Cross-matrix: Actions effects on essential factors}
+    \setlength{\tabcolsep}{4pt}
+    \renewcommand{\arraystretch}{1}
+    \centering
+    \small
+    \begin{tabular}{|l|*{23}{c|}}
+    \hline
+       % \rotatebox{-45}{Actions}
+       Actions & \rotatebox{90}{EF1} & \rotatebox{90}{EF2} & \rotatebox{90}{EF3} & \rotatebox{90}{EF4} & \rotatebox{90}{EF5} & \rotatebox{90}{EF6} & \rotatebox{90}{EF7} & \rotatebox{90}{EF8} & \rotatebox{90}{EF9} & \rotatebox{90}{EF10} & \rotatebox{90}{EF11} & \rotatebox{90}{EF12} & \rotatebox{90}{EF13} & \rotatebox{90}{EF14} & \rotatebox{90}{EF15} & \rotatebox{90}{EF16} & \rotatebox{90}{EF17} & \rotatebox{90}{EF18} & \rotatebox{90}{EF19} & \rotatebox{90}{EF20} & \rotatebox{90}{EF21} & \rotatebox{90}{EF22} & \rotatebox{90}{EF23} \\ 
+     \hline
+        LA1 & 1 & 2 & 2 & 1 & 1 & 1 & 2 & 2 & 2 & 1 & 1 & 1 & 2 & 1 & 1 & 1 & 2 & 2 & 2 & 2 & 2 & 2 & 2  ~ \\ \hline
+        LA2 & 1 & 2 & 2 & 1 & 1 & 2 & 1 & 2 & 1 & 1 & 1 & 2 & 1 & 0 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 ~\\ \hline
+        LA3 & 2 & 1 & 1 & 2 & 0 & 1 & 1 & 2 & 1 & 2 & 1 & 2 & 1 & 2 & 0 & 2 & 1 & 2 & 1 & 2 & 1 & 2 & 2 ~\\ \hline
+        LA4 & -1 & 1 & 2 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 1 & 0 & 1 & 1 & 1 & 1 & 2 & 1 & 2 & 2 ~\\ \hline
+        LA5 & 1 & 1 & 2 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & 1 & 2 & 1 & 1 & 0 & 0 & 0 & 0 & 1 & 2 & 1 & 1 & 2 ~\\ \hline
+        LA6 & 1 & 1 & 2 & 2 & 0 & 0 & 1 & 1 & 2 & 0 & 1 & 0 & 1 & 1 & 0 & 0 & 0 & 2 & 1 & 0 & 1 & 1 & 2 ~\\ \hline
+        LA7 & 0 & 1 & 1 & 1 & 0 & 0 & 2 & 1 & 1 & 0 & 1 & 1 & 0 & 1 & 0 & 0 & 2 & 2 & 2 & 1 & 1 & 2 & 2 ~\\ \hline
+        LA8 & 0 & 1 & 1 & 1 & 0 & 1 & 1 & 0 & 1 & 2 & 1 & 2 & 0 & 2 & 2 & 1 & 1 & 1 & 2 & 1 & 1 & 1 & 1 ~\\ \hline
+        LA9 & 1 & 2 & 1 & 1 & 1 & 0 & 1 & 1 & 2 & 1 & 2 & 1 & 1 & 2 & 0 & 1 & 2 & 2 & 1 & 0 & 1 & 1 & 1 ~\\ \hline
+        LA10 & 1 & 2 & 0 & 2 & 1 & 2 & 1 & 2 & 2 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 2 & 1 & 1 & 1 & 1 & 0 ~\\ \hline
+        LA11 & 2 & 2 & 1 & 2 & 0 & 0 & 0 & 2 & 2 & 2 & 1 & 1 & 1 & 1 & 0 & 1 & 2 & 2 & 1 & 0 & 0 & 1 & 1 ~\\ \hline
+        LA12 & 1 & 2 & 1 & 2 & 1 & 1 & 1 & 2 & 2 & 2 & 1 & 2 & 1 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & 1 & 2 & 1 ~\\ \hline
+        LA13 & -1 & 1 & 0 & 0 & 1 & 2 & 1 & 0 & 0 & 1 & 2 & 1 & 0 & 0 & 2 & 2 & 1 & 0 & 1 & 0 & 2 & 1 & 1 ~\\ \hline
+        LA14 & 1 & 1 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 2 & 1 & 1 & 1 & 1 & 2 & 0 & 1 & 1 & 1 & 2 & 1 & 1 ~\\ \hline
+        LA15 & 1 & 1 & 1 & 2 & 1 & 2 & 0 & 2 & 1 & 2 & 1 & 1 & 1 & 1 & 1 & 2 & 1 & 1 & 1 & 0 & 1 & 1 & 0 ~\\ \hline
+        LA16 & 1 & 1 & 2 & 2 & 1 & 0 & 0 & 2 & 2 & 1 & 1 & 1 & 1 & 0 & 0 & -1 & 1 & 1 & 1 & 1 & -1 & 2 & 1 ~\\ \hline
+        LA17 & 1 & 1 & 1 & 1 & 0 & 0 & 0 & 1 & 1 & 1 & 2 & 1 & 1 & 1 & 0 & 0 & 2 & 2 & 1 & 0 & 0 & 2 & 1 ~\\ \hline
+        LA18 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 2 & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 2 & 1 & 2 ~\\ \hline
+        LA19 & 1 & 2 & 1 & 1 & 1 & 1 & 1 & 2 & 2 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 ~\\ \hline
+        LA20 & 1 & 1 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & 2 & 0 & 1 & 1 & 1 & 2 & 1 & 1 ~\\ \hline
+        LA21 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & 2 & 0 & 0 & 1 & 2 & 2 & 0 & 1 & 1 & 1 ~\\ \hline
+        LA22 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 1 & 0 & 1 & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 1 & 0 & 0 & 0 ~\\ \hline
+        LA23 & -1 & 1 & 2 & 0 & 0 & 1 & 2 & 0 & -1 & 1 & 1 & 1 & 1 & 1 & 1 & 0 & 2 & 0 & 2 & 0 & 0 & 2 & 0 ~\\ \hline
+        LA24 & 2 & 2 & 0 & 1 & 0 & 0 & 0 & 1 & 1 & 1 & -1 & 2 & 0 & -1 & 0 & -1 & 1 & 1 & 1 & 2 & 0 & 1 & 1 ~\\ \hline
+        LA25 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 1 & 1 & 0 & 1 & 1 & 1 & 0 & 0 & 1 & 1 ~\\ \hline
+        LA26 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 ~\\ \hline
+        LA27 & 0 & 0 & 1 & 0 & 2 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 2 & 0 & 1 & 1 & 2 & 0 & 0 & 0 & 0 ~\\ \hline
+        LA28 & -1 & 1 & 0 & 0 & 0 & 0 & 1 & 1 & -1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & 1 & 0 ~\\ \hline
+        CA1 & 2 & 1 & -1 & 1 & 0 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & -1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 ~\\ \hline
+        CA2 & -1 & 1 & 1 & 2 & 0 & 0 & 0 & 0 & -1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 0 ~\\ \hline
+        CA3 & 1 & 1 & 1 & 1 & 2 & 1 & 1 & 1 & 1 & 2 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 0 ~\\ \hline
+        CA4 & -1 & 2 & 1 & 0 & 1 & 0 & 0 & -1 & -1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 ~\\ \hline
+        CA5 & -1 & 1 & 0 & 2 & 0 & 0 & 1 & 1 & -1 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 2 & 1 & 1 & 1 & 1 & 2 & 0 ~\\ \hline
+        CA6 & -1 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 2 & 0 & 1 & 2 & 1 & 1 & 2 & 1 & 1 & 0 & 0 & 0 & 1 & 0 ~\\ \hline
+        CA7 & -1 & 1 & 0 & 1 & 0 & 1 & 0 & 2 & -1 & 1 & 1 & 1 & 1 & 1 & 0 & 2 & 1 & 1 & 1 & 0 & 1 & 1 & 0 ~\\ \hline
+        CA8 & 0 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 1 & 1 & 0 & 1 & 1 & 1 & 1 ~\\ \hline
+        CA9 & -1 & 1 & 0 & 2 & 0 & 0 & 2 & 0 & -1 & 0 & -2 & 1 & -1 & -2 & 0 & -1 & 2 & 1 & 2 & 0 & 0 & 2 & 0 ~\\ \hline
+        CA10 & 0 & 2 & 1 & 1 & 2 & 1 & 1 & 2 & 1 & 1 & 1 & 1 & 0 & 0 & 2 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 ~\\ \hline
+        CA11 & -1 & 0 & 0 & -1 & 0 & 0 & 0 & 0 & -1 & 0 & 1 & 2 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & 2 & 2 & 0 & 2 ~\\ \hline
+        CA12 & 0 & 2 & 0 & 1 & 1 & 1 & 0 & 2 & 2 & 2 & 1 & 1 & 1 & 1 & 1 & 2 & 0 & 1 & 0 & 0 & 1 & 1 & 0 ~\\ \hline
+        CA13 & -1 & 1 & 1 & 2 & 1 & 1 & 1 & 1 & 0 & 2 & 1 & 1 & 2 & 2 & 1 & 2 & 1 & 1 & 1 & 0 & 1 & 2 & 1 ~\\ \hline
+        CA14 & -1 & 2 & 2 & 2 & 0 & 0 & 1 & 0 & -1 & -1 & 1 & 1 & 1 & 1 & 0 & 1 & 2 & 0 & 1 & 1 & 0 & 2 & 0 ~\\ \hline
+        CA15 & -1 & 1 & 2 & 1 & 0 & 0 & 1 & 0 & -1 & -1 & 1 & 1 & 1 & 2 & 0 & 1 & 0 & 1 & 1 & 1 & 1 & 1 & 2 ~\\ \hline
+        CA16 & 1 & 1 & 1 & 2 & 1 & 0 & 2 & 1 & -1 & 1 & 0 & 2 & 0 & 2 & 1 & 0 & 2 & 2 & 2 & 2 & 1 & 2 & 1 ~\\ \hline
+        
+        \end{tabular}
+    \label{tab:laca_table}
+\end{table}
+
+
+For supporting the understanding of the values shown in \autoref{tab:laca_table}, the essential barriers and actions were coded as it follows:
+
+\begin{itemize} 
+\item \textbf{Essential factors to be addressed}: 
+EF1 - Finance
+; EF2 - Strategic management
+; EF3 - Innovation
+; EF4 - Company productivity
+; EF5 - Entrepreneurial competence
+; EF6 - Human resources
+; EF7 - Marketing
+; EF8 - Organizational aspects
+; EF9 - Resource allocation
+; EF10 - Human capital
+; EF11 - Food safety
+; EF12 - Investments
+; EF13 - Courses, training and learning
+; EF14 - Quality
+; EF15 - Soft Skills
+; EF16 - Working and health conditions
+; EF17 - Sales and market
+; EF18 - Supply chain
+; EF19 - Clients and/or consumers
+; EF20 - Access to credit
+; EF21 - Regulations
+; EF22 - Competitiveness
+; EF23 - Infrastructure
+
+
+\item \textbf{Actions to face the factors (elicited from literature)}: 
+LA1 - Map and study market evolution
+;  LA2 - Improve internal and external relationships within the organization
+;  LA3 - Obtain financial capital investment
+;  LA4 - Seek constant updates on innovations
+;  LA5 - Obtain investment and knowledge about technological capital
+;  LA6 - Use appropriate tools and software
+;  LA7 - Map the business activity area
+;  LA8- Better understand society (desires and cultures)
+;  LA9 - Map and manage the supply chain
+;  LA10 - Manage physical and organizational resources
+;  LA11 - Manage productivity
+;  LA12 - Improve organizational management and control
+;  LA13 - Demonstrate personal and organizational integrity
+;  LA14 - Leverage sustainable practices
+;  LA15 - Facilitate and improve the work of employees
+;  LA16 - Map and extract the most from the organizational physical environment
+;  LA17 - Improve actions in the value chain
+;  LA18 - Understand climatic and geographic impacts
+;  LA19 - Develop and apply strategic plans
+;  LA20 - Know the legislation and government actions
+;  LA21 - Map the characteristics of the product or service
+;  LA22 - Use demographic factors as opportunities
+;  LA23 - Know and intensify marketing and communications actions
+;  LA24 - Know and apply financial management methods
+;  LA25 - Develop theoretical and practical knowledge
+;  LA26 - Family structuring
+;  LA27 - Develop personal and professional competencies \ins{(labelled ``Develop personal characteristics'' in the questionnaire)}
+;  LA28 - Invest in social actions
+
+
+\item \textbf{Actions to face the factors (elicited by \textit{Lab} team)}
+
+CA1 - Outsource activities
+;  CA2 - Change the company location
+;  CA3 - Have managers present in the organization
+;  CA4 - Change the organizational focus
+;  CA5 - Expand the company location
+;  CA6 - Hold periodic meetings
+;  CA7 - Invest in company's 5s
+;  CA8 - Participate in business clusters
+;  CA9 - Make the price competitive and/or affordable
+;  CA10 - Understand the goals and objectives of the organization
+;  CA11 - Carry out actions that are advantageous to the government
+;  CA12 - Define the resolution of activities and functions within the organization
+;  CA13 - Qualify the workforce
+;  CA14 - Acquisition or improvement of machinery
+;  CA15 - Invest in research and development (R\&D)
+;  CA16 - Seek advantage and be highlighted in the market
+\end{itemize}
+
+
+
+
+
+% Essential factors do be faced
+% \begin{itemize}
+% ; EF1 - Finance
+% ; EF2 - Strategic management
+% ; EF3 - Innovation
+% ; EF4 - Company productivity
+% ; EF5 - Entrepreneurial competence
+% ; EF6 - Human resources
+% ; EF7 - Marketing
+% ; EF8 - Organizational aspects
+% ; EF9 - Resource allocation
+% ; EF10 - Human capital
+% ; EF11 - Food safety
+% ; EF12 - Investments
+% ; EF13 - Courses, training and learning
+% ; EF14 - Quality
+% ; EF15 - Soft Skills
+% ; EF16 - Working and health conditions
+% ; EF17 - Sales and market
+% ; EF18 - Supply chain
+% ; EF19 - Clients and/or consumers
+% ; EF20 - Access to credit
+% ; EF21 - Regulations
+% ; EF22 - Competitiveness
+% ; EF23 - Infrastructure
+%     \end{itemize}
+
+% Actions to face the facors
+% \begin{itemize}
+% ;  LA1 - Map and study market evolution
+% ;  LA2 - Improve internal and external relationships within the organization
+% ;  LA3 - Obtain financial capital investment
+% ;  LA4 - Seek constant updates on innovations
+% ;  LA5 - Obtain investment and knowledge about technological capital
+% ;  LA6 - Use appropriate tools and software
+% ;  LA7 - Map the business activity area
+% ;  LA8- Better understand society (desires and cultures)
+% ;  LA9 - Map and manage the supply chain
+% ;  LA10 - Manage physical and organizational resources
+% ;  LA11 - Manage productivity
+% ;  LA12 - Improve organizational management and control
+% ;  LA13 - Demonstrate personal and organizational integrity
+% ;  LA14 - Leverage sustainable practices
+% ;  LA15 - Facilitate and improve the work of employees
+% ;  LA16 - Map and extract the most from the organizational physical environment
+% ;  LA17 - Improve actions in the value chain
+% ;  LA18 - Understand climatic and geographic impacts
+% ;  LA19 - Develop and apply strategic plans
+% ;  LA20 - Know the legislation and government actions
+% ;  LA21 - Map the characteristics of the product or service
+% ;  LA22 - Use demographic factors as opportunities
+% ;  LA23 - Know and intensify marketing and communications actions
+% ;  LA24 - Know and apply financial management methods
+% ;  LA25 - Develop theoretical and practical knowledge
+% ;  LA26 - Family structuring
+% ;  LA27 - Develop personal characteristics
+% ;  LA28 - Invest in social actions
+
+% \end{itemize}
+
+% \textit{Lab} stock proposal
+
+% \begin{itemize}
+% ; CA1 - Outsource activities
+% ;  CA2 - Change the company location
+% ;  CA3 - Have managers present in the organization
+% ;  CA4 - Change the organizational focus
+% ;  CA5 - Expand the company location
+% ;  CA6 - Hold periodic meetings
+% ;  CA7 - Invest in company's 5s
+% ;  CA8 - Participate in business clusters
+% ;  CA9 - Make the price competitive and/or affordable
+% ;  CA10 - Understand the goals and objectives of the organization
+% ;  CA11 - Carry out actions that are advantageous to the government
+% ;  CA12 - Define the resolution of activities and functions within the organization
+% ;  CA13 - Qualify the workforce
+% ;  CA14 - Acquisition or improvement of machinery
+% ;  CA15 - Invest in research and development (R\&D)
+% ;  CA16 - Seek advantage and be highlighted in the market
+% \end{itemize}
